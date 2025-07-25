@@ -1,0 +1,21 @@
+#div2{
+  height: 100px;
+  width: 500px;
+  background-image: url(gx6f0h8f.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* 
+  background shorthand
+  background: red url(gx6f0h8f.png) no-repeat contain center;
+  */
+}
+h2{
+  color: rgb(3,49,145);
+}
+#div3{
+  height: 300px;
+  width: 300px;
+  background-color: rgb(116, 27, 27);
+  visibility: visible;
+}
