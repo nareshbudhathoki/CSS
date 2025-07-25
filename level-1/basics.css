@@ -1,0 +1,29 @@
+*{
+  color: bisque;
+}
+
+
+h1{
+  color: chartreuse;
+}
+
+#first{
+  height: 100px;
+  width: 100px;
+  border: 2px solid green;
+}
+.second{
+  height: 200px;
+  width: 200px;
+  border: 2px solid saddlebrown;
+  border-radius: 50%;
+  text-align: center;
+}
+/* groups selector */
+span, small, big{
+  color: cornflowerblue;
+}
+/* descendent selector */
+#third p{
+color: darkmagenta;
+}
