@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Semantic HTML Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+
+  <form action="/submit" method="POST">
+      <h1>Registration Form</h1>
+
+    <!-- Group 1: Personal Info -->
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+      <br><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob">
+    </fieldset>
+
+    <br>
+
+    <!-- Group 2: Preferences -->
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="">Select Country</option>
+        <option value="nl">Netherlands</option>
+        <option value="de">Germany</option>
+        <option value="us">USA</option>
+      </select>
+      <br><br>
+
+      <label for="browser">Preferred Browser:</label>
+      <input type="text" id="browser" name="browser" list="browsers">
+      <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Edge">
+        <option value="Safari">
+      </datalist>
+      <br><br>
+
+      <label>Subscription Type:</label><br>
+      <input type="radio" id="basic" name="plan" value="basic">
+      <label for="basic">Basic</label><br>
+      <input type="radio" id="premium" name="plan" value="premium">
+      <label for="premium">Premium</label>
+    </fieldset>
+
+    <br>
+
+    <!-- Group 3: Feedback -->
+    <fieldset>
+      <legend>Feedback</legend>
+
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Your feedback..."></textarea>
+      <br><br>
+
+      <label>
+        <input type="checkbox" name="agree" required>
+        I agree to the terms and conditions
+      </label>
+    </fieldset>
+
+    <br>
+
+    <!-- Output area (just a demo for output tag) -->
+    <label for="range">Rate your experience (0–10):</label>
+    <input type="range" id="range" name="range" min="0" max="10" oninput="result.value = range.value">
+    <output name="result" id="result">5</output>
+
+    <br><br>
+
+    <!-- Buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+  </form>
+
+</body>
+</html>

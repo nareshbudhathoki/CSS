@@ -1,0 +1,146 @@
+/* Basic Reset and Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f8fa;
+  color: #333;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Fieldset & Legend */
+fieldset {
+  border: none;
+  margin-bottom: 25px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #1abc9c;
+  font-size: 1.1rem;
+}
+
+/* Label + Inputs */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #34495e;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="range"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #1abc9c;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Radio and Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+fieldset label[for] {
+  margin-bottom: 10px;
+}
+
+/* Range output alignment */
+input[type="range"] {
+  width: calc(100% - 60px);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+output {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: #1abc9c;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background 0.3s;
+}
+
+button[type="submit"] {
+  background-color: #1abc9c;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #16a085;
+}
+
+button[type="reset"] {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+button[type="reset"]:hover {
+  background-color: #d0d7dc;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}

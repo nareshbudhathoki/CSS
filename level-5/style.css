@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* we can not set height and width property for the inline.it will have no effect of height and width and will take the size according to its content's size */
+.box{
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  border: 2px solid greenyellow;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: aqua;
+  display: inline-block;
+}
+/* with inline block i can set height and width property and it will have the effect on it */
+
+#box2{
+  visibility: hidden;
+  display: none;
+}

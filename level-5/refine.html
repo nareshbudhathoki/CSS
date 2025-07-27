@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semantic Layout with Positioning</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* HEADER - fixed and topmost */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #1abc9c;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* MAIN - pushes below fixed header */
+    main {
+      margin-top: 70px;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .content-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Floating absolute box inside main */
+    .floating-box {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      width: 150px;
+      height: 100px;
+      background-color: rgba(255, 165, 0, 0.9);
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      z-index: 5;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>My Site</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="floating-box">
+      I’m on top!
+    </div>
+
+    <div class="content-box">
+      <h2>Welcome to the site</h2>
+      <p>This is the main content area. Scroll to see how the header stays fixed and how the floating box overlaps using <code>position: absolute</code> and <code>z-index</code>.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, lorem sed bibendum fermentum, velit turpis consectetur eros, nec pretium nisi ligula ut leo.</p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 My Semantic Site. All rights reserved.
+  </footer>
+
+</body>
+</html>
