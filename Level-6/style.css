@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#container{
+  height: 200px;
+  width: 400px;
+  background-color: aquamarine;
+  text-align: center;
+  border: 2px solid red;
+}
+
+.box{
+  height: 50px;
+  width: 50px;
+  background-color: greenyellow;
+  border: 2px solid black;
+  padding: 2px;
+  margin: 5px;
+}
+
+/* float property only do left and right */
+#box1{
+  float: right;
+}

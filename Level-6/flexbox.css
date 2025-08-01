@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#heading{
+  text-align: center;
+}
+
+#container{
+  height: 300px;
+  width: 500px;
+  background-color: rgb(190, 210, 34);
+  border: 2px dotted black;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.box{
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  border: 2px solid red;
+  text-align: center;
+}
+
+#box1{
+  order: 2;
+}
+#box2{
+  order: 3;
+}
+#box3{
+  order:2;
+}
+#box4{
+  order: 1;
+}
