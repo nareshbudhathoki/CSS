@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.progress-container{
+  height: 15px;
+  width: 90%;
+  background-color: silver;
+  border: 2px solid black;
+  border-radius: 20px;
+  position: relative;
+  left: 4%;
+  top: 2%;
+}
+
+.progress-bar{
+  background-color: rgb(86, 86, 241);
+  height: 100%;
+  border-radius: 20px;
+  animation: animate-progress 3s ease-in-out 1s infinite normal;
+}
+
+@keyframes animate-progress {
+  /* from{
+    width: 0%;
+  }
+  to{
+    width: 100%;
+  } */
+  0%{
+    width: 0%;
+  }
+
+  90%{
+    width: 100%;
+  }
+  95%{
+    width: 90%;
+  }
+  100%{
+    width: 100%;
+  }
+}

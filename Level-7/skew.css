@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.box{
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  text-align: center;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 300px;
+  top: 100px;
+  transition: all 3s ease-in-out 0.5s;
+}
+
+.box:hover{
+  background-color: blueviolet;
+  transform: skew(180deg);
+}
